@@ -1,0 +1,11 @@
+<div class="card mx-auto">
+   <h1>{{title}}</h1>
+   <form [formGroup]="loginForm" (ngSubmit)="loginuser()">
+
+      <input type="text" placeholder="enter name" formControlName="user">
+      <br><br>
+      <input type="password" placeholder="enter password" formControlName="password">
+      <br><br>
+      <button class="btn btn-warning">Login</button>
+   </form>
+</div>

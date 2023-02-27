@@ -1,0 +1,21 @@
+<div class="card">
+    <p>TO-DO List in Angular</p>
+   <h3>{{title}}</h3> 
+   <input type="text" placeholder="Enter New Task" #task/>
+   <br>
+  <button (click)="addTask(task.value)">Add New Task</button>
+<br>
+
+<!-- <table *ngForOf= "let item of list">
+    <li>{{item.name}}</li>
+</table> -->
+
+    <ul *ngFor="let item of list">
+       <li>{{item.name}}
+        <button (click)="removeTask(item.id)">Remove</button>
+       </li>
+    </ul>
+
+
+
+</div>

@@ -1,0 +1,23 @@
+
+<div class="card mx-auto">
+    <p style="text-align: center;">Reactive Form Using <br>Form Builder & Validation</p>
+ 
+   <form [formGroup]="contactForm" class="form" (ngSubmit)="formSubmit(contactForm.value)">
+
+    <div class="form-group">       
+    <input type="text" class="formcontrol" formControlName="userName">
+    </div>
+                                
+     
+    <div class="form-group">       
+        <input type="text" class="formcontrol" formControlName="password">
+        </div>
+   
+
+        <div class="button">  
+         <button class="btn btn-warning">Login</button>
+         &nbsp;  &nbsp;
+            <a (click)="setData()" class="btn btn-primary">Set Value</a>
+            </div>
+        </form> 
+</div>

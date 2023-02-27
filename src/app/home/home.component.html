@@ -1,0 +1,20 @@
+<h1 style="text-align: center;">HOME</h1>
+
+<div class="card">
+    Here! I am using Reactive Forms, Form Control, Form Builder, Navigation , Routing, Bootstrap,CSS,<br>
+    Pagination, Pipe's, API json to fetch data to console and also show data in hmtl file, Google Map.
+ <br>
+ <h2>{{today }}</h2>
+ <h2>{{today | date : 'fullDate'}}</h2>
+
+</div>
+
+<div class="pipe">
+    <h1>Params with Pipes  and Use two Pipes at the same time<br> Number Pipe, Currency Pipe, Slice Pipe</h1>
+    <h2>{{user | json}}</h2>
+    <h3>{{title | slice :3:8 }}</h3>
+    <h4>{{0190.001900 | number:'1.2-2'}}</h4>
+    <h4>{{100 | currency :'USD'}}</h4>
+    <h1>CUSTOM PIPES</h1>
+    <h3>{{30 | pipes:80}}</h3>
+</div>

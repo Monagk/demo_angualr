@@ -1,0 +1,11 @@
+.card{
+    background-color: cornflowerblue;
+    align-items: center;
+    padding: 3%;
+    margin:10%;
+    width:fit-content;
+
+}
+.btn{
+  margin-left:60px;
+}

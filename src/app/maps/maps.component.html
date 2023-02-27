@@ -1,0 +1,19 @@
+<div class="card">
+<p>Show List From API data in Angular</p>
+
+<table>
+        <tr>
+            <td>ID</td>
+            <td>TITLE</td>
+            <td>USER-ID</td>
+        </tr>
+        <tr *ngFor="let items of items | paginate : {itemsPerPage:10, currentPage:p}">
+            <td>{{items.id}}</td>
+            <td>{{items.title}}</td>
+            <td>{{items.userId}}</td>
+        </tr>
+       
+</table>
+
+<pagination-controls (pageChange)="p = $event"></pagination-controls>
+</div>
